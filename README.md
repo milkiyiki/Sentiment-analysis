@@ -24,48 +24,50 @@ Clone the repository to your local machine.
 ```bash
 git clone https://github.com/username/sentiment-analysis.git
 cd sentiment-analysis
+```
 
 2. Create a virtual environment (optional but recommended)
 It is recommended to use a virtual environment to avoid conflicts with other projects' dependencies.
 
-bash
+```bash
 Copy
 Edit
 python -m venv venv
 Activate the virtual environment:
-
+```
 On Windows:
 
-bash
+```bash
 Copy
 Edit
 venv\Scripts\activate
 On macOS/Linux:
-
-bash
+```
+```bash
 Copy
 Edit
 source venv/bin/activate
 3. Install dependencies
 Once the virtual environment is activated, install the required dependencies by running:
-
-bash
+```
+```bash
 Copy
 Edit
 pip install -r requirements.txt
+```
 4. Download Word2Vec pre-trained model
 You can download the pre-trained Google News Word2Vec model from this link.
-
 Once downloaded, extract the .bin.gz file to the data/ directory.
 
-bash
+```bash
 Copy
 Edit
 # Assuming you download and extract it to:
 # C:/Users/YourUsername/Downloads/GoogleNews-vectors-negative300.bin.gz
 Dependencies
+```
 This project uses the following libraries:
-
+```
 pandas
 
 numpy
@@ -79,7 +81,7 @@ gensim (optional for Word2Vec)
 matplotlib
 
 tqdm
-
+```
 Setup
 Download the dataset
 The dataset is uber_reviews_labeled.csv, which contains labeled app reviews with columns like reviewId, content, score, and sentiment.
